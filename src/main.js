@@ -9,6 +9,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    autoHideMenuBar: true,
     webPreferences: {
         webviewTag: true,
         nodeIntegration: true,
@@ -16,7 +17,7 @@ const createWindow = () => {
     }
   });
 
-  mainWindow.loadFile(path.join(__dirname, 'app.html'));
+  //mainWindow.loadFile(path.join(__dirname, 'app.html'));
   //mainWindow.loadURL('site.com');
 };
 
